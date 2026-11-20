@@ -603,3 +603,30 @@ footer {
         transition: none;
     }
 }
+
+/* PERSONALIZAÇÃO DOS COMPONENTES BOOTSTRAP */
+
+/* Menu de navegação */
+.menu-site {
+    padding: 12px 5%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.menu-site .navbar-brand {
+    font-weight: bold;
+}
+
+/* Seção Mais sobre mim */
+.mais-sobre h2 {
+    margin-bottom: 25px;
+}
+
+.mais-sobre .accordion {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Cor do painel aberto */
+.mais-sobre .accordion-button:not(.collapsed) {
+    background-color: #f3c6d8;
+    color: #000000;
+}

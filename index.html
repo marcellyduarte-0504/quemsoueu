@@ -3,50 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- Adapta a página à largura da tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Marcelly - Quem sou eu?</title>
 
     <link rel="icon" href="imagens/bola.png" type="image/png">
 
-    <!-- Framework Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS da página -->
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bloqueado">
 
-    <!-- Bola -->
+    <!-- Animação de abertura -->
     <div class="bola-abertura">
         <img src="imagens/trionda.png" alt="Bola de futebol">
     </div>
 
+    <!-- Menu de navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75 menu-site">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Quem sou eu?</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gostos">Gostos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#livros">Livros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmes">Filmes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pessoas">Pessoas especiais</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Cabeçalho -->
     <header>
+
         <h1 class="titulo-principal">
+
             <img src="imagens/bola.png" alt="Bola de futebol">
+
             <span>Quem sou eu?</span>
+
         </h1>
 
         <p class="subtitulo">
             Um pouco sobre mim, meus gostos e as pessoas especiais para mim.
         </p>
+
     </header>
 
     <!-- Minha apresentação -->
-    <section class="apresentacao">
+    <section class="apresentacao" id="sobre">
 
         <div class="area-foto">
+
             <img
                 src="imagens/minhafoto.png"
                 alt="Foto de Marcelly"
-                class="foto-principal">
+                class="foto-principal"
+            >
+
         </div>
 
         <div class="texto">
@@ -86,17 +134,17 @@
             </p>
 
         </div>
+
     </section>
 
     <!-- O que eu gosto -->
-    <section class="gostos">
+    <section class="gostos" id="gostos">
 
         <h2>O que eu gosto:</h2>
 
         <div class="cards-gostos">
 
-            <!-- Card de futebol -->
-            <div class="card card-gosto">
+            <div class="card">
 
                 <img src="imagens/futebol.jpg" alt="Futebol">
 
@@ -108,8 +156,7 @@
 
             </div>
 
-            <!-- Card de matemática -->
-            <div class="card card-gosto">
+            <div class="card">
 
                 <img src="imagens/matematica.jpg" alt="Matemática">
 
@@ -121,8 +168,7 @@
 
             </div>
 
-            <!-- Card de música -->
-            <div class="card card-gosto">
+            <div class="card">
 
                 <img src="imagens/musica.jpg" alt="Música">
 
@@ -136,36 +182,45 @@
             </div>
 
         </div>
+
     </section>
 
     <!-- Livros -->
-    <section class="livros">
+    <section class="livros" id="livros">
 
         <h2>Livros que gosto</h2>
 
         <div class="fotos-livros">
+
             <img src="imagens/livro1.jpg" alt="Livro que eu gosto">
+
             <img src="imagens/livro2.jpg" alt="Livro que eu gosto">
+
             <img src="imagens/livro3.jpg" alt="Livro que eu gosto">
+
         </div>
 
     </section>
 
     <!-- Filmes -->
-    <section class="filmes">
+    <section class="filmes" id="filmes">
 
         <h2>Filmes que gosto</h2>
 
         <div class="fotos-filmes">
+
             <img src="imagens/filme1.jpg" alt="Filme que eu gosto">
+
             <img src="imagens/filme2.jpg" alt="Filme que eu gosto">
+
             <img src="imagens/filme3.jpg" alt="Filme que eu gosto">
+
         </div>
 
     </section>
 
     <!-- Pessoas especiais -->
-    <section class="pessoas">
+    <section class="pessoas" id="pessoas">
 
         <h2>Pessoas especiais:</h2>
 
@@ -177,21 +232,31 @@
         <div class="fotos-pessoas">
 
             <div>
+
                 <img src="imagens/pessoa1.jpeg" alt="Meus pais">
+
                 <p>Meus pais &lt;3</p>
+
             </div>
 
             <div>
+
                 <img src="imagens/pessoa2.jpeg" alt="Meu cachorro">
+
                 <p>Um doguinho especial</p>
+
             </div>
 
             <div>
+
                 <img src="imagens/pessoa3.jpeg" alt="Um momento especial">
+
                 <p>Um momento muito especial</p>
+
             </div>
 
         </div>
+
     </section>
 
     <!-- Sites que eu gosto -->
@@ -202,8 +267,7 @@
         <ul>
 
             <li>
-                <a
-                    href="https://www.roblox.com/pt"
+                <a href="https://www.roblox.com/pt"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -213,8 +277,7 @@
             </li>
 
             <li>
-                <a
-                    href="https://ler.amazon.com.br/landing"
+                <a href="https://ler.amazon.com.br/landing"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -224,8 +287,7 @@
             </li>
 
             <li>
-                <a
-                    href="https://br.shein.com/"
+                <a href="https://br.shein.com/"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -235,6 +297,7 @@
             </li>
 
         </ul>
+
     </section>
 
     <!-- Tabela de preferências -->
@@ -265,9 +328,10 @@
             </tr>
 
         </table>
+
     </section>
 
-    <!-- Um momento difícil -->
+    <!-- Um momento que fez parte da minha história -->
     <section class="momento">
 
         <blockquote>
@@ -276,16 +340,21 @@
             mais fortes do que imaginávamos.”
         </blockquote>
 
-        <!-- Foto da época do COVID -->
+        <!-- Foto da época do covid -->
         <div class="foto-doenca">
+
             <img
                 src="imagens/Foto 13 - Eu doente.jpeg"
-                alt="Um momento difícil da minha vida">
+                alt="Um momento difícil da minha vida"
+            >
+
         </div>
 
         <div class="texto-momento">
 
-            <h2>Um momento que fez parte da minha história</h2>
+            <h2>
+                Um momento que fez parte da minha história
+            </h2>
 
             <p>
                 Nem todos os momentos da vida são fáceis. Houve uma época
@@ -310,6 +379,117 @@
             </p>
 
         </div>
+
+    </section>
+
+    <!-- Novo componente: Accordion do Bootstrap -->
+    <section class="mais-sobre">
+
+        <h2>Mais sobre mim</h2>
+
+        <div class="accordion" id="accordionMarcelly">
+
+            <!-- Primeiro painel -->
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#interesses"
+                        aria-expanded="true"
+                        aria-controls="interesses">
+
+                        Meus interesses
+
+                    </button>
+
+                </h3>
+
+                <div id="interesses"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionMarcelly">
+
+                    <div class="accordion-body">
+
+                        Gosto de futebol, matemática, música,
+                        literatura e aprender coisas novas.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Segundo painel -->
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#conquistas"
+                        aria-expanded="false"
+                        aria-controls="conquistas">
+
+                        Minhas conquistas
+
+                    </button>
+
+                </h3>
+
+                <div id="conquistas"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMarcelly">
+
+                    <div class="accordion-body">
+
+                        Participei de olimpíadas matemáticas,
+                        concursos literários e competições esportivas.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Terceiro painel -->
+            <div class="accordion-item">
+
+                <h3 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#sonhos"
+                        aria-expanded="false"
+                        aria-controls="sonhos">
+
+                        Meus sonhos
+
+                    </button>
+
+                </h3>
+
+                <div id="sonhos"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMarcelly">
+
+                    <div class="accordion-body">
+
+                        Quero continuar estudando, evoluindo no futebol
+                        e construindo um futuro do qual eu possa me orgulhar.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Rodapé -->
@@ -321,12 +501,20 @@
 
     </footer>
 
-    <!-- Remove o bloqueio após a animação inicial -->
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animação de abertura -->
     <script>
+
         setTimeout(function () {
+
             document.body.classList.remove("bloqueado");
+
         }, 3000);
+
     </script>
 
 </body>
+
 </html>
